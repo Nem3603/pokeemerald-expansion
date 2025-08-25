@@ -207,3 +207,36 @@ const u16 gMetatileAttributes_MysteryEventsHouse[] = INCBIN_U16("data/tilesets/s
 
 const u16 gMetatiles_UnionRoom[] = INCBIN_U16("data/tilesets/secondary/union_room/metatiles.bin");
 const u16 gMetatileAttributes_UnionRoom[] = INCBIN_U16("data/tilesets/secondary/union_room/metatile_attributes.bin");
+
+const u16 gMetatiles_OutDoors[] = INCBIN_U16("data/tilesets/primary/out_doors/metatiles.bin");
+const u16 gMetatileAttributes_OutDoors[] = INCBIN_U16("data/tilesets/primary/out_doors/metatile_attributes.bin");
+
+const u16 gMetatiles_PlayerHouse[] = INCBIN_U16("data/tilesets/primary/player_house/metatiles.bin");
+const u16 gMetatileAttributes_PlayerHouse[] = INCBIN_U16("data/tilesets/primary/player_house/metatile_attributes.bin");
+
+const u16 gMetatiles_SchoolPAth[] = INCBIN_U16("data/tilesets/primary/school_path/metatiles.bin");
+const u16 gMetatileAttributes_SchoolPAth[] = INCBIN_U16("data/tilesets/primary/school_path/metatile_attributes.bin");
+
+const u16 gMetatiles_SchoolPathExtras[] = INCBIN_U16("data/tilesets/secondary/school_path_extras/metatiles.bin");
+const u16 gMetatileAttributes_SchoolPathExtras[] = INCBIN_U16("data/tilesets/secondary/school_path_extras/metatile_attributes.bin");
+
+const u16 gMetatiles_Halls[] = INCBIN_U16("data/tilesets/primary/halls/metatiles.bin");
+const u16 gMetatileAttributes_Halls[] = INCBIN_U16("data/tilesets/primary/halls/metatile_attributes.bin");
+
+const u16 gMetatiles_SchoolRoomsTileset[] = INCBIN_U16("data/tilesets/primary/school_rooms_tileset/metatiles.bin");
+const u16 gMetatileAttributes_SchoolRoomsTileset[] = INCBIN_U16("data/tilesets/primary/school_rooms_tileset/metatile_attributes.bin");
+
+const u16 gMetatiles_SchoolRoomsExtra[] = INCBIN_U16("data/tilesets/secondary/school_rooms_extra/metatiles.bin");
+const u16 gMetatileAttributes_SchoolRoomsExtra[] = INCBIN_U16("data/tilesets/secondary/school_rooms_extra/metatile_attributes.bin");
+
+const u16 gMetatiles_GymClubroom[] = INCBIN_U16("data/tilesets/secondary/gym_clubroom/metatiles.bin");
+const u16 gMetatileAttributes_GymClubroom[] = INCBIN_U16("data/tilesets/secondary/gym_clubroom/metatile_attributes.bin");
+
+const u16 gMetatiles_SchoolMain[] = INCBIN_U16("data/tilesets/primary/school_main/metatiles.bin");
+const u16 gMetatileAttributes_SchoolMain[] = INCBIN_U16("data/tilesets/primary/school_main/metatile_attributes.bin");
+
+const u16 gMetatiles_GymSurroundings[] = INCBIN_U16("data/tilesets/secondary/gym_surroundings/metatiles.bin");
+const u16 gMetatileAttributes_GymSurroundings[] = INCBIN_U16("data/tilesets/secondary/gym_surroundings/metatile_attributes.bin");
+
+const u16 gMetatiles_PoolArea[] = INCBIN_U16("data/tilesets/secondary/pool_area/metatiles.bin");
+const u16 gMetatileAttributes_PoolArea[] = INCBIN_U16("data/tilesets/secondary/pool_area/metatile_attributes.bin");

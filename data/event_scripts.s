@@ -1157,3 +1157,75 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
 	.include "data/scripts/dexnav.inc"
+
+	.include "data/maps/PlayerHouse/scripts.inc"
+
+	.include "data/maps/PlayerHouseHall/scripts.inc"
+
+	.include "data/maps/PlayerHouseF1/scripts.inc"
+
+	.include "data/maps/SchoolPathMap/scripts.inc"
+
+	.include "data/maps/SchoolPathA1/scripts.inc"
+
+	.include "data/maps/SchoolHallF1/scripts.inc"
+
+	.include "data/maps/SchoolHallF2/scripts.inc"
+
+	.include "data/maps/SchoolHallF3/scripts.inc"
+
+	.include "data/maps/Classroom1A/scripts.inc"
+
+	.include "data/maps/ClassroomA1/scripts.inc"
+
+	.include "data/maps/ClassrooomB1/scripts.inc"
+
+	.include "data/maps/ClassroomC1/scripts.inc"
+
+	.include "data/maps/PianoRoom/scripts.inc"
+
+	.include "data/maps/Closet/scripts.inc"
+
+	.include "data/maps/cafeteria/scripts.inc"
+
+	.include "data/maps/PrincipalsRoom/scripts.inc"
+
+	.include "data/maps/SchoolEnterance/scripts.inc"
+
+	.include "data/maps/GymEnterance/scripts.inc"
+
+	.include "data/maps/StudentCouncil/scripts.inc"
+
+	.include "data/maps/Library/scripts.inc"
+
+	.include "data/maps/Clubroom/scripts.inc"
+
+	.include "data/maps/Gym/scripts.inc"
+
+	.include "data/maps/Clubroom_2/scripts.inc"
+
+	.include "data/maps/Library_2/scripts.inc"
+
+	.include "data/maps/SchoolFront/scripts.inc"
+
+	.include "data/maps/SchoolFrontPath/scripts.inc"
+
+	.include "data/maps/PoolArea/scripts.inc"
+
+	.include "data/maps/Field/scripts.inc"
+
+	.include "data/maps/SchoolFrontPath2/scripts.inc"
+
+	.include "data/maps/FieldNew/scripts.inc"
+
+	.include "data/maps/SchoolFrontPathNew/scripts.inc"
+
+	.include "data/maps/GymFrontPath/scripts.inc"
+
+	.include "data/maps/SchoolPathLeft/scripts.inc"
+
+	.include "data/maps/SchoolPathRight/scripts.inc"
+
+	.include "data/maps/SchoolPathTopRight/scripts.inc"
+
+	.include "data/maps/SchoolPathTopLeft/scripts.inc"

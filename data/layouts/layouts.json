@@ -7,7 +7,7 @@
       "width": 30,
       "height": 30,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/PetalburgCity/border.bin",
       "blockdata_filepath": "data/layouts/PetalburgCity/map.bin"
     },
@@ -4410,6 +4410,386 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_PLAYER_HOUSE",
+      "name": "PlayerHouse_Layout",
+      "width": 9,
+      "height": 9,
+      "primary_tileset": "gTileset_PlayerHouse",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/PlayerHouse/border.bin",
+      "blockdata_filepath": "data/layouts/PlayerHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_PLAYER_HOUSE_HALL",
+      "name": "PlayerHouseHall_Layout",
+      "width": 12,
+      "height": 5,
+      "primary_tileset": "gTileset_PlayerHouse",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/PlayerHouseHall/border.bin",
+      "blockdata_filepath": "data/layouts/PlayerHouseHall/map.bin"
+    },
+    {
+      "id": "LAYOUT_PLAYER_HOUSE_F1",
+      "name": "PlayerHouseF1_Layout",
+      "width": 11,
+      "height": 12,
+      "primary_tileset": "gTileset_PlayerHouse",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/PlayerHouseF1/border.bin",
+      "blockdata_filepath": "data/layouts/PlayerHouseF1/map.bin"
+    },
+    {
+      "id": "LAYOUT_SCHOOL_PATH_MAP",
+      "name": "SchoolPathMap_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_OutDoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/SchoolPathMap/border.bin",
+      "blockdata_filepath": "data/layouts/SchoolPathMap/map.bin"
+    },
+    {
+      "id": "LAYOUT_SCHOOL_PATH",
+      "name": "SchoolPath",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/SchoolPath/border.bin",
+      "blockdata_filepath": "data/layouts/SchoolPath/map.bin"
+    },
+    {
+      "id": "LAYOUT_SCHOOL_PATH_A1",
+      "name": "SchoolPathA1_Layout",
+      "width": 57,
+      "height": 62,
+      "primary_tileset": "gTileset_SchoolPAth",
+      "secondary_tileset": "gTileset_SchoolPathExtras",
+      "border_filepath": "data/layouts/SchoolPathA1/border.bin",
+      "blockdata_filepath": "data/layouts/SchoolPathA1/map.bin"
+    },
+    {
+      "id": "LAYOUT_SCHOOL_HALL_F1",
+      "name": "SchoolHallF1_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_Halls",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/SchoolHallF1/border.bin",
+      "blockdata_filepath": "data/layouts/SchoolHallF1/map.bin"
+    },
+    {
+      "id": "LAYOUT_SCHOOL_HALL_F2",
+      "name": "SchoolHallF2_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_Halls",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/SchoolHallF2/border.bin",
+      "blockdata_filepath": "data/layouts/SchoolHallF2/map.bin"
+    },
+    {
+      "id": "LAYOUT_SCHOOL_HALL_F3",
+      "name": "SchoolHallF3_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_Halls",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/SchoolHallF3/border.bin",
+      "blockdata_filepath": "data/layouts/SchoolHallF3/map.bin"
+    },
+    {
+      "id": "LAYOUT_CLASSROOM1A",
+      "name": "Classroom1A_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Classroom1A/border.bin",
+      "blockdata_filepath": "data/layouts/Classroom1A/map.bin"
+    },
+    {
+      "id": "LAYOUT_CLASSROOM_A1",
+      "name": "ClassroomA1_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_SchoolRoomsTileset",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/ClassroomA1/border.bin",
+      "blockdata_filepath": "data/layouts/ClassroomA1/map.bin"
+    },
+    {
+      "id": "LAYOUT_CLASSROOOM_B1",
+      "name": "ClassrooomB1_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_SchoolRoomsTileset",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/ClassrooomB1/border.bin",
+      "blockdata_filepath": "data/layouts/ClassrooomB1/map.bin"
+    },
+    {
+      "id": "LAYOUT_CLASSROOM_C1",
+      "name": "ClassroomC1_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_SchoolRoomsTileset",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/ClassroomC1/border.bin",
+      "blockdata_filepath": "data/layouts/ClassroomC1/map.bin"
+    },
+    {
+      "id": "LAYOUT_PIANO_ROOM",
+      "name": "PianoRoom_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_SchoolRoomsTileset",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/PianoRoom/border.bin",
+      "blockdata_filepath": "data/layouts/PianoRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_CLOSET",
+      "name": "Closet_Layout",
+      "width": 7,
+      "height": 9,
+      "primary_tileset": "gTileset_SchoolRoomsTileset",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Closet/border.bin",
+      "blockdata_filepath": "data/layouts/Closet/map.bin"
+    },
+    {
+      "id": "LAYOUT_CAFETERIA",
+      "name": "cafeteria_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_SchoolRoomsTileset",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/cafeteria/border.bin",
+      "blockdata_filepath": "data/layouts/cafeteria/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRINCIPALS_ROOM",
+      "name": "PrincipalsRoom_Layout",
+      "width": 7,
+      "height": 10,
+      "primary_tileset": "gTileset_SchoolRoomsTileset",
+      "secondary_tileset": "gTileset_SchoolRoomsExtra",
+      "border_filepath": "data/layouts/PrincipalsRoom/border.bin",
+      "blockdata_filepath": "data/layouts/PrincipalsRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_SCHOOL_ENTERANCE",
+      "name": "SchoolEnterance_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_SchoolRoomsTileset",
+      "secondary_tileset": "gTileset_SchoolRoomsExtra",
+      "border_filepath": "data/layouts/SchoolEnterance/border.bin",
+      "blockdata_filepath": "data/layouts/SchoolEnterance/map.bin"
+    },
+    {
+      "id": "LAYOUT_GYM_ENTERANCE",
+      "name": "GymEnterance_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_SchoolRoomsTileset",
+      "secondary_tileset": "gTileset_SchoolRoomsExtra",
+      "border_filepath": "data/layouts/GymEnterance/border.bin",
+      "blockdata_filepath": "data/layouts/GymEnterance/map.bin"
+    },
+    {
+      "id": "LAYOUT_STUDENT_COUNCIL",
+      "name": "StudentCouncil_Layout",
+      "width": 7,
+      "height": 9,
+      "primary_tileset": "gTileset_SchoolRoomsTileset",
+      "secondary_tileset": "gTileset_SchoolRoomsExtra",
+      "border_filepath": "data/layouts/StudentCouncil/border.bin",
+      "blockdata_filepath": "data/layouts/StudentCouncil/map.bin"
+    },
+    {
+      "id": "LAYOUT_LIBRARY",
+      "name": "Library_Layout",
+      "width": 11,
+      "height": 11,
+      "primary_tileset": "gTileset_SchoolRoomsTileset",
+      "secondary_tileset": "gTileset_SchoolRoomsExtra",
+      "border_filepath": "data/layouts/Library/border.bin",
+      "blockdata_filepath": "data/layouts/Library/map.bin"
+    },
+    {
+      "id": "LAYOUT_CLUBROOM",
+      "name": "ClubRoom_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_SchoolRoomsTileset",
+      "secondary_tileset": "gTileset_GymClubroom",
+      "border_filepath": "data/layouts/Clubroom/border.bin",
+      "blockdata_filepath": "data/layouts/Clubroom/map.bin"
+    },
+    {
+      "id": "LAYOUT_CLUB_ROOM",
+      "name": "ClubRoom_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_SchoolRoomsTileset",
+      "secondary_tileset": "gTileset_GymClubroom",
+      "border_filepath": "data/layouts/ClubRoom/border.bin",
+      "blockdata_filepath": "data/layouts/ClubRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_GYM",
+      "name": "Gym_Layout",
+      "width": 13,
+      "height": 22,
+      "primary_tileset": "gTileset_SchoolRoomsTileset",
+      "secondary_tileset": "gTileset_GymClubroom",
+      "border_filepath": "data/layouts/Gym/border.bin",
+      "blockdata_filepath": "data/layouts/Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_CLUBROOM_2",
+      "name": "Clubroom_2_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_SchoolRoomsTileset",
+      "secondary_tileset": "gTileset_GymClubroom",
+      "border_filepath": "data/layouts/Clubroom_2/border.bin",
+      "blockdata_filepath": "data/layouts/Clubroom_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_LIBRARY_2",
+      "name": "Library_2_Layout",
+      "width": 11,
+      "height": 11,
+      "primary_tileset": "gTileset_SchoolRoomsTileset",
+      "secondary_tileset": "gTileset_SchoolRoomsExtra",
+      "border_filepath": "data/layouts/Library_2/border.bin",
+      "blockdata_filepath": "data/layouts/Library_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_SCHOOL_FRONT",
+      "name": "SchoolFront_Layout",
+      "width": 42,
+      "height": 34,
+      "primary_tileset": "gTileset_SchoolMain",
+      "secondary_tileset": "gTileset_GymSurroundings",
+      "border_filepath": "data/layouts/SchoolFront/border.bin",
+      "blockdata_filepath": "data/layouts/SchoolFront/map.bin"
+    },
+    {
+      "id": "LAYOUT_SCHOOL_FRONT_PATH",
+      "name": "SchoolFrontPath_Layout",
+      "width": 26,
+      "height": 10,
+      "primary_tileset": "gTileset_SchoolMain",
+      "secondary_tileset": "gTileset_GymSurroundings",
+      "border_filepath": "data/layouts/SchoolFrontPath/border.bin",
+      "blockdata_filepath": "data/layouts/SchoolFrontPath/map.bin"
+    },
+    {
+      "id": "LAYOUT_POOL_AREA",
+      "name": "PoolArea_Layout",
+      "width": 21,
+      "height": 34,
+      "primary_tileset": "gTileset_SchoolMain",
+      "secondary_tileset": "gTileset_PoolArea",
+      "border_filepath": "data/layouts/PoolArea/border.bin",
+      "blockdata_filepath": "data/layouts/PoolArea/map.bin"
+    },
+    {
+      "id": "LAYOUT_FIELD",
+      "name": "Field_Layout",
+      "width": 22,
+      "height": 34,
+      "primary_tileset": "gTileset_SchoolMain",
+      "secondary_tileset": "gTileset_PoolArea",
+      "border_filepath": "data/layouts/Field/border.bin",
+      "blockdata_filepath": "data/layouts/Field/map.bin"
+    },
+    {
+      "id": "LAYOUT_SCHOOL_FRONT_PATH2",
+      "name": "SchoolFrontPath2_Layout",
+      "width": 44,
+      "height": 28,
+      "primary_tileset": "gTileset_SchoolMain",
+      "secondary_tileset": "gTileset_PoolArea",
+      "border_filepath": "data/layouts/SchoolFrontPath2/border.bin",
+      "blockdata_filepath": "data/layouts/SchoolFrontPath2/map.bin"
+    },
+    {
+      "id": "LAYOUT_FIELD_NEW",
+      "name": "FieldNew_Layout",
+      "width": 23,
+      "height": 34,
+      "primary_tileset": "gTileset_SchoolMain",
+      "secondary_tileset": "gTileset_PoolArea",
+      "border_filepath": "data/layouts/FieldNew/border.bin",
+      "blockdata_filepath": "data/layouts/FieldNew/map.bin"
+    },
+    {
+      "id": "LAYOUT_SCHOOL_FRONT_PATH_NEW",
+      "name": "SchoolFrontPathNew_Layout",
+      "width": 26,
+      "height": 28,
+      "primary_tileset": "gTileset_SchoolMain",
+      "secondary_tileset": "gTileset_GymSurroundings",
+      "border_filepath": "data/layouts/SchoolFrontPathNew/border.bin",
+      "blockdata_filepath": "data/layouts/SchoolFrontPathNew/map.bin"
+    },
+    {
+      "id": "LAYOUT_GYM_FRONT_PATH",
+      "name": "GymFrontPath_Layout",
+      "width": 16,
+      "height": 28,
+      "primary_tileset": "gTileset_SchoolMain",
+      "secondary_tileset": "gTileset_GymSurroundings",
+      "border_filepath": "data/layouts/GymFrontPath/border.bin",
+      "blockdata_filepath": "data/layouts/GymFrontPath/map.bin"
+    },
+    {
+      "id": "LAYOUT_SCHOOL_PATH_LEFT",
+      "name": "SchoolPathLeft_Layout",
+      "width": 32,
+      "height": 82,
+      "primary_tileset": "gTileset_SchoolMain",
+      "secondary_tileset": "gTileset_GymSurroundings",
+      "border_filepath": "data/layouts/SchoolPathLeft/border.bin",
+      "blockdata_filepath": "data/layouts/SchoolPathLeft/map.bin"
+    },
+    {
+      "id": "LAYOUT_SCHOOL_PATH_RIGHT",
+      "name": "SchoolPathRight_Layout",
+      "width": 36,
+      "height": 62,
+      "primary_tileset": "gTileset_SchoolMain",
+      "secondary_tileset": "gTileset_PoolArea",
+      "border_filepath": "data/layouts/SchoolPathRight/border.bin",
+      "blockdata_filepath": "data/layouts/SchoolPathRight/map.bin"
+    },
+    {
+      "id": "LAYOUT_SCHOOL_PATH_TOP_RIGHT",
+      "name": "SchoolPathTopRight_Layout",
+      "width": 80,
+      "height": 20,
+      "primary_tileset": "gTileset_SchoolMain",
+      "secondary_tileset": "gTileset_PoolArea",
+      "border_filepath": "data/layouts/SchoolPathTopRight/border.bin",
+      "blockdata_filepath": "data/layouts/SchoolPathTopRight/map.bin"
+    },
+    {
+      "id": "LAYOUT_SCHOOL_PATH_TOP_LEFT",
+      "name": "SchoolPathTopLeft_Layout",
+      "width": 42,
+      "height": 20,
+      "primary_tileset": "gTileset_SchoolMain",
+      "secondary_tileset": "gTileset_GymSurroundings",
+      "border_filepath": "data/layouts/SchoolPathTopLeft/border.bin",
+      "blockdata_filepath": "data/layouts/SchoolPathTopLeft/map.bin"
     }
   ]
 }

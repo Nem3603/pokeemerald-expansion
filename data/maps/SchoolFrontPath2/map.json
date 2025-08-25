@@ -1,0 +1,54 @@
+{
+  "id": "MAP_SCHOOL_FRONT_PATH2",
+  "name": "SchoolFrontPath2",
+  "layout": "LAYOUT_SCHOOL_FRONT_PATH2",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_POOL_AREA",
+      "offset": 0,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_SCHOOL_FRONT",
+      "offset": -42,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_FIELD_NEW",
+      "offset": 21,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_SCHOOL_FRONT_PATH_NEW",
+      "offset": 0,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_SCHOOL_PATH_RIGHT",
+      "offset": -34,
+      "direction": "right"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 41,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SCHOOL_FRONT_PATH2",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

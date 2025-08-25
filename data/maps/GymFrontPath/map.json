@@ -1,0 +1,36 @@
+{
+  "id": "MAP_GYM_FRONT_PATH",
+  "name": "GymFrontPath",
+  "layout": "LAYOUT_GYM_FRONT_PATH",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_SCHOOL_FRONT_PATH_NEW",
+      "offset": 0,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_SCHOOL_FRONT",
+      "offset": 0,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_SCHOOL_PATH_LEFT",
+      "offset": -54,
+      "direction": "left"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
+}
