@@ -816,6 +816,10 @@ static void PlayerNotOnBikeMoving(u8 direction, u16 heldKeys)
         }
         else
         {
+            u8 adjustedCollision = collision - COLLISION_STOP_SURFING;
+            if (adjustedCollision > 3)
+                PlayerNotOnBikeCollide(direction);
+            return;
             // Player collided with something. Certain collisions have special handling that precludes the normal collision effect.
             // COLLISION_STOP_SURFING and COLLISION_PUSHED_BOULDER's effects are started by CheckForObjectEventCollision.
             // COLLISION_LEDGE_JUMP's effect is handled further up in this function, so it will never reach this point.
@@ -892,8 +896,8 @@ static u8 CheckForPlayerAvatarCollision(u8 direction)
     y = playerObjEvent->currentCoords.y;
     if (IsDirectionalStairWarpMetatileBehavior(MapGridGetMetatileBehaviorAt(x, y), direction))
         return COLLISION_STAIR_WARP;
-
-    MoveCoords(direction, &x, &y);
+    
+        MoveCoords(direction, &x, &y);
     return CheckForObjectEventCollision(playerObjEvent, x, y, direction, MapGridGetMetatileBehaviorAt(x, y));
 }
 

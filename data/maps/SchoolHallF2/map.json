@@ -16,32 +16,102 @@
   "object_events": [],
   "warp_events": [
     {
-      "x": 35,
+      "x": 36,
       "y": 30,
       "elevation": 0,
       "dest_map": "MAP_SCHOOL_HALL_F1",
       "dest_warp_id": "2"
     },
     {
-      "x": 35,
+      "x": 36,
       "y": 31,
       "elevation": 0,
       "dest_map": "MAP_SCHOOL_HALL_F1",
       "dest_warp_id": "3"
     },
     {
-      "x": 35,
+      "x": 36,
       "y": 28,
       "elevation": 0,
       "dest_map": "MAP_SCHOOL_HALL_F3",
       "dest_warp_id": "0"
     },
     {
-      "x": 35,
+      "x": 36,
       "y": 29,
       "elevation": 0,
       "dest_map": "MAP_SCHOOL_HALL_F3",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 36,
+      "y": 33,
+      "elevation": 0,
+      "dest_map": "MAP_STUDENT_COUNCIL",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_PIANO_ROOM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 36,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_CLASSROOOM_B1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 36,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_CLASSROOOM_B1",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 36,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_CLASSROOM_A1",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 36,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_CLASSROOM_A1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 24,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SCHOOL_HALL_F1",
+      "dest_warp_id": "8"
+    },
+    {
+      "x": 25,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SCHOOL_HALL_F1",
+      "dest_warp_id": "7"
+    },
+    {
+      "x": 26,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SCHOOL_HALL_F3",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 27,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SCHOOL_HALL_F3",
+      "dest_warp_id": "6"
     }
   ],
   "coord_events": [],

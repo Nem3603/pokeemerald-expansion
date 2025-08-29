@@ -181,7 +181,6 @@
 #define METATILE_Fallarbor_BrownRockWall             0x265
 #define METATILE_Fallarbor_Door_BattleTent           0x36C
 #define METATILE_Fallarbor_Door_DarkRoof             0x2F7
-#define METATILE_Fallarbor_Door_LightRoof            0x2A5
 #define METATILE_Fallarbor_NormalGrass               0x212
 #define METATILE_Fallarbor_RedCaveEntrance_Bottom    0x34F
 #define METATILE_Fallarbor_RedCaveEntrance_Top       0x347
@@ -249,6 +248,15 @@
 #define METATILE_GenericBuilding_TrickHouse_Door_Closed  0x21B
 #define METATILE_GenericBuilding_TrickHouse_Stairs_Down  0x219
 
+// gTileset_GymSurroundings
+#define METATILE_GymSurroundings_School_Door_Front  0x34A
+
+// gTileset_Halls
+#define METATILE_Halls_ClassroomDoor          0x003
+#define METATILE_Halls_ClassroomDoorLeft      0x002
+#define METATILE_Halls_ClassroomDoorLeftUsed  0x018
+#define METATILE_Halls_ClassroomDoorUsed      0x01B
+
 // gTileset_InsideOfTruck
 #define METATILE_InsideOfTruck_DoorClosedFloor_Bottom  0x21D
 #define METATILE_InsideOfTruck_DoorClosedFloor_Mid     0x215
@@ -299,10 +307,8 @@
 // gTileset_Mauville
 #define METATILE_Mauville_DeepSand_BottomMid  0x259
 #define METATILE_Mauville_DeepSand_Center     0x251
-#define METATILE_Mauville_Door                0x2AC
 #define METATILE_Mauville_Door_BattleTent     0x3D4
 #define METATILE_Mauville_Door_CyclingRoad    0x289
-#define METATILE_Mauville_Door_Verdanturf     0x3A1
 #define METATILE_Mauville_MirageTower_Tile0   0x3D8
 #define METATILE_Mauville_MirageTower_Tile1   0x3D9
 #define METATILE_Mauville_MirageTower_Tile10  0x3E4
@@ -391,7 +397,6 @@
 // gTileset_Petalburg
 #define METATILE_Petalburg_Door_BirchsLab   0x249
 #define METATILE_Petalburg_Door_Littleroot  0x248
-#define METATILE_Petalburg_Door_Oldale      0x287
 
 // gTileset_PetalburgGym
 #define METATILE_PetalburgGym_Door                0x224
@@ -431,9 +436,9 @@
 #define METATILE_PokemonCenter_Floor_ShadowTop           0x21E
 #define METATILE_PokemonCenter_Floor_ShadowTop_Alt       0x2DC
 
-// gTileset_Rustboro
-#define METATILE_Rustboro_Door_Gray  0x21F
-#define METATILE_Rustboro_Door_Tan   0x22F
+// gTileset_SchoolRoomsExtra
+#define METATILE_SchoolRoomsExtra_LibraryDoorLeft   0x24D
+#define METATILE_SchoolRoomsExtra_LibraryDoorRight  0x23D
 
 // gTileset_SecretBase
 #define METATILE_SecretBase_AttractMat_BottomLeft       0x313
@@ -715,7 +720,6 @@
 #define METATILE_Shop_Laptop2_Normal  0x2A5
 
 // gTileset_Slateport
-#define METATILE_Slateport_Door             0x2DC
 #define METATILE_Slateport_Door_BattleTent  0x393
 
 // gTileset_Sootopolis

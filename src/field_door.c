@@ -131,6 +131,13 @@ static const u8 sDoorAnimTiles_TrainerHillLobbyElevator[] = INCBIN_U8("graphics/
 static const u16 sDoorNullPalette48[16] = {};
 static const u8 sDoorAnimTiles_TrainerHillRoofElevator[] = INCBIN_U8("graphics/door_anims/trainer_hill_roof_elevator.4bpp");
 static const u16 sDoorNullPalette49[16] = {};
+static const u8 sDoorAnimTiles_SchoolFrontDoor[] = INCBIN_U8("graphics/door_anims/SchoolDoorFrontAnim.4bpp");
+static const u8 sDoorAnimTiles_ClassroomDoor[] = INCBIN_U8("graphics/door_anims/SchoolDoorAnim.4bpp");
+static const u8 sDoorAnimTiles_ClassroomDoorLeft[] = INCBIN_U8("graphics/door_anims/SchoolDoorAnimLeft.4bpp");
+static const u8 sDoorAnimTiles_ClassroomDoorUsed[] = INCBIN_U8("graphics/door_anims/ClassroomDoor.4bpp");
+static const u8 sDoorAnimTiles_ClassroomDoorLeftUsed[] = INCBIN_U8("graphics/door_anims/ClassroomDoorLeft.4bpp");
+static const u8 sDoorAnimTiles_LibraryDoorLeft[] = INCBIN_U8("graphics/door_anims/LibraryDoorLeft.4bpp");
+static const u8 sDoorAnimTiles_LibraryDoorRight[] = INCBIN_U8("graphics/door_anims/LibraryDoorRight.4bpp");
 
 static const struct DoorAnimFrame sDoorOpenAnimFrames[] =
 {
@@ -219,6 +226,10 @@ static const u8 sDoorAnimPalettes_BattleDomePreBattleRoom[] = {9, 9, 7, 7, 7, 7,
 static const u8 sDoorAnimPalettes_BattleTentInterior[] = {9, 9, 9, 9, 9, 9, 9, 9};
 static const u8 sDoorAnimPalettes_TrainerHillLobbyElevator[] = {7, 7, 7, 7, 7, 7, 7, 7};
 static const u8 sDoorAnimPalettes_TrainerHillRoofElevator[] = {9, 9, 7, 7, 7, 7, 7, 7};
+static const u8 sDoorAnimPalettes_SchoolFrontDoor[] = {12, 12, 12, 12, 12, 12, 12, 12};
+static const u8 sDoorAnimPalettes_ClassroomDoor[] = {1, 1, 1, 1, 1, 1, 1, 1};
+static const u8 sDoorAnimPalettes_LibraryDoorLeft[] = {6, 6, 4, 4, 4, 4, 5, 5};
+static const u8 sDoorAnimPalettes_LibraryDoorRight[] = {6, 6, 4, 4, 4, 4, 5, 5};
 
 static const struct DoorGraphics sDoorAnimGraphicsTable[] =
 {
@@ -228,13 +239,13 @@ static const struct DoorGraphics sDoorAnimGraphicsTable[] =
     {METATILE_General_Door_PokeMart,                        DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_PokeMart, sDoorAnimPalettes_PokeMart},
     {METATILE_Petalburg_Door_Littleroot,                    DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_Littleroot, sDoorAnimPalettes_Littleroot},
     {METATILE_Petalburg_Door_BirchsLab,                     DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_BirchsLab, sDoorAnimPalettes_BirchsLab},
-    {METATILE_Rustboro_Door_Tan,                            DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_RustboroTan, sDoorAnimPalettes_RustboroTan},
-    {METATILE_Rustboro_Door_Gray,                           DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_RustboroGray, sDoorAnimPalettes_RustboroGray},
-    {METATILE_Fallarbor_Door_LightRoof,                     DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_FallarborLightRoof, sDoorAnimPalettes_FallarborLightRoof},
-    {METATILE_Petalburg_Door_Oldale,                        DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_Oldale, sDoorAnimPalettes_Oldale},
-    {METATILE_Mauville_Door,                                DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_Mauville, sDoorAnimPalettes_Mauville},
-    {METATILE_Mauville_Door_Verdanturf,                     DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_Verdanturf, sDoorAnimPalettes_Verdanturf},
-    {METATILE_Slateport_Door,                               DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_Slateport, sDoorAnimPalettes_Slateport},
+    {METATILE_GymSurroundings_School_Door_Front,            DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_SchoolFrontDoor, sDoorAnimPalettes_SchoolFrontDoor},
+    {METATILE_Halls_ClassroomDoor,                          DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_ClassroomDoor, sDoorAnimPalettes_ClassroomDoor},
+    {METATILE_Halls_ClassroomDoorLeft,                      DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_ClassroomDoorLeft, sDoorAnimPalettes_ClassroomDoor},
+    {METATILE_Halls_ClassroomDoorUsed,                      DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_ClassroomDoorUsed, sDoorAnimPalettes_ClassroomDoor},
+    {METATILE_Halls_ClassroomDoorLeftUsed,                  DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_ClassroomDoorLeftUsed, sDoorAnimPalettes_ClassroomDoor},
+    {METATILE_SchoolRoomsExtra_LibraryDoorLeft,             DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_LibraryDoorLeft, sDoorAnimPalettes_LibraryDoorLeft},
+    {METATILE_SchoolRoomsExtra_LibraryDoorRight,            DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_LibraryDoorRight, sDoorAnimPalettes_LibraryDoorRight},
     {METATILE_Dewford_Door,                                 DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_Dewford, sDoorAnimPalettes_Dewford},
     {METATILE_General_Door_Contest,                         DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_Contest, sDoorAnimPalettes_Contest},
     {METATILE_Lilycove_Door,                                DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_Lilycove, sDoorAnimPalettes_Lilycove},
@@ -322,41 +333,41 @@ static void DrawCurrentDoorAnimFrame(const struct DoorGraphics *gfx, u32 x, u32 
     {
         // Top left metatile
         BuildDoorTiles(&tiles[8], DOOR_TILE_START_SIZE2 + 0, &paletteNums[0]);
-        DrawDoorMetatileAt(x, y - 1, &tiles[8]);
+        DrawDoorMetatileAt(x, y, &tiles[8]);
 
         // Bottom left metatile
         BuildDoorTiles(&tiles[8], DOOR_TILE_START_SIZE2 + 4, &paletteNums[4]);
-        DrawDoorMetatileAt(x, y, &tiles[8]);
+        DrawDoorMetatileAt(x, y + 1, &tiles[8]);
 
         // Top right metatile
         BuildDoorTiles(&tiles[8], DOOR_TILE_START_SIZE2 + 8, &paletteNums[0]);
-        DrawDoorMetatileAt(x + 1, y - 1, &tiles[8]);
+        DrawDoorMetatileAt(x + 1, y, &tiles[8]);
 
         // Bottom right metatile
         BuildDoorTiles(&tiles[8], DOOR_TILE_START_SIZE2 + 12, &paletteNums[4]);
-        DrawDoorMetatileAt(x + 1, y, &tiles[8]);
+        DrawDoorMetatileAt(x + 1, y + 1, &tiles[8]);
     }
     else
     {
         // Top metatile
         BuildDoorTiles(&tiles[0], DOOR_TILE_START_SIZE1 + 0, &paletteNums[0]);
-        DrawDoorMetatileAt(x, y - 1, &tiles[0]);
+        DrawDoorMetatileAt(x, y, &tiles[0]);
 
         // Bottom metatile
         BuildDoorTiles(&tiles[0], DOOR_TILE_START_SIZE1 + 4, &paletteNums[4]);
-        DrawDoorMetatileAt(x, y, &tiles[0]);
+        DrawDoorMetatileAt(x, y + 1, &tiles[0]);
     }
 }
 
 static void DrawClosedDoorTiles(const struct DoorGraphics *gfx, u32 x, u32 y)
 {
-    CurrentMapDrawMetatileAt(x, y - 1);
     CurrentMapDrawMetatileAt(x, y);
+    CurrentMapDrawMetatileAt(x, y + 1);
 
     if (gfx->size == 2)
     {
-        CurrentMapDrawMetatileAt(x + 1, y - 1);
         CurrentMapDrawMetatileAt(x + 1, y);
+        CurrentMapDrawMetatileAt(x + 1, y + 1);
     }
 }
 

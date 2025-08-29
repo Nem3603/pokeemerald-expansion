@@ -14,7 +14,29 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
   "object_events": [],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_SCHOOL_HALL_F1",
+      "dest_warp_id": "6"
+    },
+    {
+      "x": 4,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_SCHOOL_HALL_F1",
+      "dest_warp_id": "6"
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_SCHOOL_HALL_F1",
+      "dest_warp_id": "6"
+    }
+  ],
   "coord_events": [],
   "bg_events": []
 }

@@ -30,18 +30,53 @@
       "dest_warp_id": "3"
     },
     {
-      "x": 35,
+      "x": 36,
       "y": 28,
       "elevation": 0,
       "dest_map": "MAP_SCHOOL_HALL_F2",
       "dest_warp_id": "0"
     },
     {
-      "x": 35,
+      "x": 36,
       "y": 29,
       "elevation": 0,
       "dest_map": "MAP_SCHOOL_HALL_F2",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 36,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_CAFETERIA",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 37,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_CAFETERIA",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 36,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_PRINCIPALS_ROOM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 26,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SCHOOL_HALL_F2",
+      "dest_warp_id": "11"
+    },
+    {
+      "x": 27,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SCHOOL_HALL_F2",
+      "dest_warp_id": "10"
     }
   ],
   "coord_events": [],
