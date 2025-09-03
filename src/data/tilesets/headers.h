@@ -951,3 +951,25 @@ const struct Tileset gTileset_PoolArea =
     .metatileAttributes = gMetatileAttributes_PoolArea,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_BusPathTiles =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_BusPathTiles,
+    .palettes = gTilesetPalettes_BusPathTiles,
+    .metatiles = gMetatiles_BusPathTiles,
+    .metatileAttributes = gMetatileAttributes_BusPathTiles,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_BusPathExtras =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_BusPathExtras,
+    .palettes = gTilesetPalettes_BusPathExtras,
+    .metatiles = gMetatiles_BusPathExtras,
+    .metatileAttributes = gMetatileAttributes_BusPathExtras,
+    .callback = NULL,
+};

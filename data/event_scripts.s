@@ -1229,3 +1229,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SchoolPathTopRight/scripts.inc"
 
 	.include "data/maps/SchoolPathTopLeft/scripts.inc"
+
+	.include "data/maps/BusPath/scripts.inc"

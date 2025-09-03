@@ -35,29 +35,29 @@
       "x": 28,
       "y": 39,
       "elevation": 0,
-      "dest_map": "MAP_SCHOOL_PATH_RIGHT",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_BUS_PATH",
+      "dest_warp_id": "4"
     },
     {
       "x": 28,
       "y": 40,
       "elevation": 0,
-      "dest_map": "MAP_SCHOOL_PATH_RIGHT",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_BUS_PATH",
+      "dest_warp_id": "3"
     },
     {
       "x": 28,
       "y": 41,
       "elevation": 0,
-      "dest_map": "MAP_SCHOOL_PATH_RIGHT",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_BUS_PATH",
+      "dest_warp_id": "2"
     },
     {
       "x": 28,
       "y": 42,
       "elevation": 0,
-      "dest_map": "MAP_SCHOOL_PATH_RIGHT",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_BUS_PATH",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [],

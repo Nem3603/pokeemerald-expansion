@@ -240,3 +240,9 @@ const u16 gMetatileAttributes_GymSurroundings[] = INCBIN_U16("data/tilesets/seco
 
 const u16 gMetatiles_PoolArea[] = INCBIN_U16("data/tilesets/secondary/pool_area/metatiles.bin");
 const u16 gMetatileAttributes_PoolArea[] = INCBIN_U16("data/tilesets/secondary/pool_area/metatile_attributes.bin");
+
+const u16 gMetatiles_BusPathTiles[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/metatiles.bin");
+const u16 gMetatileAttributes_BusPathTiles[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/metatile_attributes.bin");
+
+const u16 gMetatiles_BusPathExtras[] = INCBIN_U16("data/tilesets/secondary/bus_path_extras/metatiles.bin");
+const u16 gMetatileAttributes_BusPathExtras[] = INCBIN_U16("data/tilesets/secondary/bus_path_extras/metatile_attributes.bin");

@@ -4622,16 +4622,6 @@
       "blockdata_filepath": "data/layouts/Library/map.bin"
     },
     {
-      "id": "LAYOUT_CLUBROOM",
-      "name": "ClubRoom_Layout",
-      "width": 9,
-      "height": 8,
-      "primary_tileset": "gTileset_SchoolRoomsTileset",
-      "secondary_tileset": "gTileset_GymClubroom",
-      "border_filepath": "data/layouts/Clubroom/border.bin",
-      "blockdata_filepath": "data/layouts/Clubroom/map.bin"
-    },
-    {
       "id": "LAYOUT_CLUB_ROOM",
       "name": "ClubRoom_Layout",
       "width": 9,
@@ -4790,6 +4780,26 @@
       "secondary_tileset": "gTileset_GymSurroundings",
       "border_filepath": "data/layouts/SchoolPathTopLeft/border.bin",
       "blockdata_filepath": "data/layouts/SchoolPathTopLeft/map.bin"
+    },
+    {
+      "id": "LAYOUT_TESTLAYOUT",
+      "name": "TESTLAYOUT",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/TESTLAYOUT/border.bin",
+      "blockdata_filepath": "data/layouts/TESTLAYOUT/map.bin"
+    },
+    {
+      "id": "LAYOUT_BUS_PATH",
+      "name": "BusPath_Layout",
+      "width": 66,
+      "height": 102,
+      "primary_tileset": "gTileset_BusPathTiles",
+      "secondary_tileset": "gTileset_BusPathExtras",
+      "border_filepath": "data/layouts/BusPath/border.bin",
+      "blockdata_filepath": "data/layouts/BusPath/map.bin"
     }
   ]
 }

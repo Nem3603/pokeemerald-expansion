@@ -637,7 +637,8 @@
     "PlayerHouseF1"
   ],
   "gMapGroup_SchoolPath": [
-    "SchoolPathA1"
+    "SchoolPathA1",
+    "BusPath"
   ],
   "gMapGroup_SchoolRooms": [
     "SchoolHallF1",
