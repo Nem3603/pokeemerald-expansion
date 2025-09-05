@@ -380,6 +380,57 @@ const struct SubspriteTable sOamTables_64x64[] = {
     {ARRAY_COUNT(sOamTable_64x64_3), sOamTable_64x64_3}
 };
 
+//////////////////////////////////////////////////////
+static const struct Subsprite sOamTable_64x48_0[] = {
+    {
+        .x = -32,
+        .y = -24,
+        SUBSPRITE_SHAPE(64, 64),
+        .tileOffset = 0,
+        .priority = 2
+    }
+};
+
+static const struct Subsprite sOamTable_64x48_1[] = {
+    {
+        .x = -32,
+        .y = -24,
+        SUBSPRITE_SHAPE(64, 64),
+        .tileOffset = 0,
+        .priority = 1
+    }
+};
+
+static const struct Subsprite sOamTable_64x48_2[] = {
+    {
+        .x = -32,
+        .y = -24,
+        SUBSPRITE_SHAPE(64, 64),
+        .tileOffset = 0,
+        .priority = 2
+    }
+};
+
+static const struct Subsprite sOamTable_64x48_3[] = {
+    {
+        .x = -32,
+        .y = -24,
+        SUBSPRITE_SHAPE(64, 64),
+        .tileOffset = 0,
+        .priority = 2
+    }
+};
+
+const struct SubspriteTable sOamTables_64x48[] = {
+    {},
+    {ARRAY_COUNT(sOamTable_64x48_0), sOamTable_64x48_0},
+    {ARRAY_COUNT(sOamTable_64x48_1), sOamTable_64x48_1},
+    {ARRAY_COUNT(sOamTable_64x48_2), sOamTable_64x48_2},
+    {ARRAY_COUNT(sOamTable_64x48_3), sOamTable_64x48_3},
+    {ARRAY_COUNT(sOamTable_64x48_3), sOamTable_64x48_3}
+};
+//////////////////////////////////////////////////////
+
 static const struct Subsprite sOamTable_96x40_0[] = {
     {
         .x = -48,

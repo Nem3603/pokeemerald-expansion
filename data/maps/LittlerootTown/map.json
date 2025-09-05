@@ -85,7 +85,7 @@
       "flag": "FLAG_HIDE_LITTLEROOT_TOWN_MOM_OUTSIDE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_TRUCK",
+      "graphics_id": "OBJ_EVENT_GFX_BUS",
       "x": 2,
       "y": 10,
       "elevation": 4,
