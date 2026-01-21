@@ -139,7 +139,6 @@ static const u8 sDoorAnimTiles_ClassroomDoorLeftUsed[] = INCBIN_U8("graphics/doo
 static const u8 sDoorAnimTiles_LibraryDoorLeft[] = INCBIN_U8("graphics/door_anims/LibraryDoorLeft.4bpp");
 static const u8 sDoorAnimTiles_LibraryDoorRight[] = INCBIN_U8("graphics/door_anims/LibraryDoorRight.4bpp");
 static const u8 sDoorAnimTiles_PlayerHouseDoor[] = INCBIN_U8("graphics/door_anims/HouseDoorAnim.4bpp");
-static const u8 sDoorAnimTiles_GymDoor[] = INCBIN_U8("graphics/door_anims/GymDoor.4bpp");
 
 static const struct DoorAnimFrame sDoorOpenAnimFrames[] =
 {
@@ -233,7 +232,6 @@ static const u8 sDoorAnimPalettes_ClassroomDoor[] = {1, 1, 1, 1, 1, 1, 1, 1};
 static const u8 sDoorAnimPalettes_LibraryDoorLeft[] = {6, 6, 4, 4, 4, 4, 5, 5};
 static const u8 sDoorAnimPalettes_LibraryDoorRight[] = {6, 6, 4, 4, 4, 4, 5, 5};
 static const u8 sDoorAnimPalettes_PlayerHouseDoor[] = {1, 1, 3, 3, 3, 3, 3, 3};
-static const u8 sDoorAnimPalettes_GymDoor[] = {10, 10, 10, 10, 10, 10, 10, 10};
 
 static const struct DoorGraphics sDoorAnimGraphicsTable[] =
 {
@@ -265,7 +263,7 @@ static const struct DoorGraphics sDoorAnimGraphicsTable[] =
     {METATILE_Lilycove_Door_SafariZone,                     DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_SafariZone, sDoorAnimPalettes_SafariZone},
     {METATILE_Mossdeep_Door_SpaceCenter,                    DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_MossdeepSpaceCenter, sDoorAnimPalettes_MossdeepSpaceCenter},
     {METATILE_PokemonCenter_Door_CableClub,                 DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_CableClub, sDoorAnimPalettes_CableClub},
-    {METATILE_GymSurroundings_Gym_Door_Front,               DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_GymDoor, sDoorAnimPalettes_GymDoor},
+    {METATILE_InsideShip_IntactDoor_Bottom_Unlocked,        DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_AbandonedShip, sDoorAnimPalettes_AbandonedShip},
     {METATILE_Fallarbor_Door_DarkRoof,                      DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_FallarborDarkRoof, sDoorAnimPalettes_FallarborDarkRoof},
     {METATILE_InsideShip_IntactDoor_Bottom_Interior,        DOOR_SOUND_NORMAL,  1, sDoorAnimTiles_AbandonedShipRoom, sDoorAnimPalettes_AbandonedShipRoom},
     {METATILE_Shop_Door_Elevator,                           DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_LilycoveDeptStoreElevator, sDoorAnimPalettes_LilycoveDeptStoreElevator},

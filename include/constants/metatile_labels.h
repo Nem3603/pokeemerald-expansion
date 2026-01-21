@@ -248,7 +248,6 @@
 #define METATILE_GenericBuilding_TrickHouse_Stairs_Down  0x219
 
 // gTileset_GymSurroundings
-#define METATILE_GymSurroundings_Gym_Door_Front     0x239
 #define METATILE_GymSurroundings_School_Door_Front  0x34A
 
 // gTileset_Halls
@@ -270,6 +269,7 @@
 #define METATILE_InsideShip_DoorIndent_Unlocked         0x21A
 #define METATILE_InsideShip_IntactDoor_Bottom_Interior  0x297
 #define METATILE_InsideShip_IntactDoor_Bottom_Locked    0x233
+#define METATILE_InsideShip_IntactDoor_Bottom_Unlocked  0x22B
 
 // gTileset_Lavaridge
 #define METATILE_Lavaridge_AshGrass             0x207

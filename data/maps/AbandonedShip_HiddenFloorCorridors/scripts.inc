@@ -19,9 +19,11 @@ AbandonedShip_HiddenFloorCorridors_OnLoad:
 	end
 
 AbandonedShip_HiddenFloorCorridors_EventScript_UnlockRoom1::
+	setmetatile 3, 8, METATILE_InsideShip_IntactDoor_Bottom_Unlocked, TRUE
 	return
 
 AbandonedShip_HiddenFloorCorridors_EventScript_UnlockRoom2::
+	setmetatile 6, 8, METATILE_InsideShip_IntactDoor_Bottom_Unlocked, TRUE
 	return
 
 AbandonedShip_HiddenFloorCorridors_EventScript_UnlockRoom4::

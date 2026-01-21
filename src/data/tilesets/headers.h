@@ -960,7 +960,7 @@ const struct Tileset gTileset_BusPathTiles =
     .palettes = gTilesetPalettes_BusPathTiles,
     .metatiles = gMetatiles_BusPathTiles,
     .metatileAttributes = gMetatileAttributes_BusPathTiles,
-    .callback = InitTilesetAnim_BusPathTiles,
+    .callback = NULL,
 };
 
 const struct Tileset gTileset_BusPathExtras =

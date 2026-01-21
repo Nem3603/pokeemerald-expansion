@@ -4794,7 +4794,7 @@
     {
       "id": "LAYOUT_BUS_PATH",
       "name": "BusPath_Layout",
-      "width": 70,
+      "width": 66,
       "height": 102,
       "primary_tileset": "gTileset_BusPathTiles",
       "secondary_tileset": "gTileset_BusPathExtras",
