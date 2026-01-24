@@ -1186,3 +1186,362 @@ static void BlendAnimPalette_BattleDome_FloorLightsNoBlend(u16 timer)
             sSecondaryTilesetAnimCallback = NULL;
     }
 }
+
+
+/////custom animation code/////
+
+//buspath water animation code
+const u16 gTilesetAnims_BusPathTiles_water_Frame0[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/water/00.4bpp");
+const u16 gTilesetAnims_BusPathTiles_water_Frame1[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/water/01.4bpp");
+const u16 gTilesetAnims_BusPathTiles_water_Frame2[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/water/02.4bpp");
+const u16 gTilesetAnims_BusPathTiles_water_Frame3[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/water/03.4bpp");
+const u16 gTilesetAnims_BusPathTiles_water_Frame4[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/water/04.4bpp");
+const u16 gTilesetAnims_BusPathTiles_water_Frame5[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/water/05.4bpp");
+const u16 gTilesetAnims_BusPathTiles_water_Frame6[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/water/06.4bpp");
+const u16 gTilesetAnims_BusPathTiles_water_Frame7[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/water/07.4bpp");
+
+const u16 *const gTilesetAnims_BusPathTiles_Water[] = {
+    gTilesetAnims_BusPathTiles_water_Frame0,
+    gTilesetAnims_BusPathTiles_water_Frame1,
+    gTilesetAnims_BusPathTiles_water_Frame2,
+    gTilesetAnims_BusPathTiles_water_Frame3,
+    gTilesetAnims_BusPathTiles_water_Frame4,
+    gTilesetAnims_BusPathTiles_water_Frame5,
+    gTilesetAnims_BusPathTiles_water_Frame6,
+    gTilesetAnims_BusPathTiles_water_Frame7
+};
+
+static void QueueAnimTiles_BusPathTiles_Water(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_BusPathTiles_Water);
+    AppendTilesetAnimToBuffer(gTilesetAnims_BusPathTiles_Water[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(13)), 4 * TILE_SIZE_4BPP);
+}
+
+//bus path Purple Flower Code
+const u16 gTilesetAnims_BusPathTiles_PurpleFlower_Frame0[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/purpleFlower/00.4bpp");
+const u16 gTilesetAnims_BusPathTiles_PurpleFlower_Frame1[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/purpleFlower/01.4bpp");
+const u16 gTilesetAnims_BusPathTiles_PurpleFlower_Frame2[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/purpleFlower/02.4bpp");
+const u16 gTilesetAnims_BusPathTiles_PurpleFlower_Frame3[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/purpleFlower/03.4bpp");
+
+const u16 *const gTilesetAnims_BusPathTiles_PurpleFlower[] = {
+    gTilesetAnims_BusPathTiles_PurpleFlower_Frame0,
+    gTilesetAnims_BusPathTiles_PurpleFlower_Frame1,
+    gTilesetAnims_BusPathTiles_PurpleFlower_Frame2,
+    gTilesetAnims_BusPathTiles_PurpleFlower_Frame3
+};
+
+static void QueueAnimTiles_BusPathTiles_PurpleFlower(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_BusPathTiles_PurpleFlower);
+    AppendTilesetAnimToBuffer(gTilesetAnims_BusPathTiles_PurpleFlower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(5)), 4 * TILE_SIZE_4BPP);
+}
+
+//bus path Blue Flower Code
+const u16 gTilesetAnims_BusPathTiles_BlueFlower_Frame0[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/blueFlower/00.4bpp");
+const u16 gTilesetAnims_BusPathTiles_BlueFlower_Frame1[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/blueFlower/01.4bpp");
+const u16 gTilesetAnims_BusPathTiles_BlueFlower_Frame2[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/blueFlower/02.4bpp");
+const u16 gTilesetAnims_BusPathTiles_BlueFlower_Frame3[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/blueFlower/03.4bpp");
+
+const u16 *const gTilesetAnims_BusPathTiles_BlueFlower[] = {
+    gTilesetAnims_BusPathTiles_BlueFlower_Frame0,
+    gTilesetAnims_BusPathTiles_BlueFlower_Frame1,
+    gTilesetAnims_BusPathTiles_BlueFlower_Frame2,
+    gTilesetAnims_BusPathTiles_BlueFlower_Frame3
+};
+
+static void QueueAnimTiles_BusPathTiles_BlueFlower(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_BusPathTiles_BlueFlower);
+    AppendTilesetAnimToBuffer(gTilesetAnims_BusPathTiles_BlueFlower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(1)), 4 * TILE_SIZE_4BPP);
+}
+
+//bus path Red Flower Code
+const u16 gTilesetAnims_BusPathTiles_RedFlower_Frame0[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/redFlower/00.4bpp");
+const u16 gTilesetAnims_BusPathTiles_RedFlower_Frame1[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/redFlower/01.4bpp");
+const u16 gTilesetAnims_BusPathTiles_RedFlower_Frame2[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/redFlower/02.4bpp");
+const u16 gTilesetAnims_BusPathTiles_RedFlower_Frame3[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/redFlower/03.4bpp");
+
+const u16 *const gTilesetAnims_BusPathTiles_RedFlower[] = {
+    gTilesetAnims_BusPathTiles_RedFlower_Frame0,
+    gTilesetAnims_BusPathTiles_RedFlower_Frame1,
+    gTilesetAnims_BusPathTiles_RedFlower_Frame2,
+    gTilesetAnims_BusPathTiles_RedFlower_Frame3
+};
+
+static void QueueAnimTiles_BusPathTiles_RedFlower(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_BusPathTiles_RedFlower);
+    AppendTilesetAnimToBuffer(gTilesetAnims_BusPathTiles_RedFlower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(9)), 4 * TILE_SIZE_4BPP);
+}
+
+//bus path water sand code
+const u16 gTilesetAnims_BusPathTiles_WaterSand_Frame0[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterSand/00.4bpp");
+const u16 gTilesetAnims_BusPathTiles_WaterSand_Frame1[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterSand/01.4bpp");
+const u16 gTilesetAnims_BusPathTiles_WaterSand_Frame2[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterSand/02.4bpp");
+const u16 gTilesetAnims_BusPathTiles_WaterSand_Frame3[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterSand/03.4bpp");
+const u16 gTilesetAnims_BusPathTiles_WaterSand_Frame4[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterSand/04.4bpp");
+const u16 gTilesetAnims_BusPathTiles_WaterSand_Frame5[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterSand/05.4bpp");
+const u16 gTilesetAnims_BusPathTiles_WaterSand_Frame6[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterSand/06.4bpp");
+const u16 gTilesetAnims_BusPathTiles_WaterSand_Frame7[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterSand/07.4bpp");
+
+const u16 *const gTilesetAnims_BusPathTiles_WaterSand[] = {
+    gTilesetAnims_BusPathTiles_WaterSand_Frame0,
+    gTilesetAnims_BusPathTiles_WaterSand_Frame1,
+    gTilesetAnims_BusPathTiles_WaterSand_Frame2,
+    gTilesetAnims_BusPathTiles_WaterSand_Frame3,
+    gTilesetAnims_BusPathTiles_WaterSand_Frame4,
+    gTilesetAnims_BusPathTiles_WaterSand_Frame5,
+    gTilesetAnims_BusPathTiles_WaterSand_Frame6,
+    gTilesetAnims_BusPathTiles_WaterSand_Frame7
+};
+
+static void QueueAnimTiles_BusPathTiles_WaterSand(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_BusPathTiles_WaterSand);
+    AppendTilesetAnimToBuffer(gTilesetAnims_BusPathTiles_WaterSand[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(33)), 4 * TILE_SIZE_4BPP);
+}
+
+
+//bus path waterFliffTL
+const u16 gTilesetAnims_BusPathTiles_waterCliffTL_Frame0[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffTL/00.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffTL_Frame1[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffTL/01.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffTL_Frame2[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffTL/02.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffTL_Frame3[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffTL/03.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffTL_Frame4[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffTL/04.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffTL_Frame5[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffTL/05.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffTL_Frame6[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffTL/06.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffTL_Frame7[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffTL/07.4bpp");
+
+const u16 *const gTilesetAnims_BusPathTiles_waterCliffTL[] = {
+    gTilesetAnims_BusPathTiles_waterCliffTL_Frame0,
+    gTilesetAnims_BusPathTiles_waterCliffTL_Frame1,
+    gTilesetAnims_BusPathTiles_waterCliffTL_Frame2,
+    gTilesetAnims_BusPathTiles_waterCliffTL_Frame3,
+    gTilesetAnims_BusPathTiles_waterCliffTL_Frame4,
+    gTilesetAnims_BusPathTiles_waterCliffTL_Frame5,
+    gTilesetAnims_BusPathTiles_waterCliffTL_Frame6,
+    gTilesetAnims_BusPathTiles_waterCliffTL_Frame7
+};
+
+static void QueueAnimTiles_BusPathTiles_waterCliffTL(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_BusPathTiles_waterCliffTL);
+    AppendTilesetAnimToBuffer(gTilesetAnims_BusPathTiles_waterCliffTL[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(31)), 1 * TILE_SIZE_4BPP);
+}
+
+
+//bus path waterFliffML
+const u16 gTilesetAnims_BusPathTiles_waterCliffML_Frame0[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffML/00.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffML_Frame1[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffML/01.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffML_Frame2[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffML/02.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffML_Frame3[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffML/03.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffML_Frame4[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffML/04.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffML_Frame5[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffML/05.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffML_Frame6[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffML/06.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffML_Frame7[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffML/07.4bpp");
+
+const u16 *const gTilesetAnims_BusPathTiles_waterCliffML[] = {
+    gTilesetAnims_BusPathTiles_waterCliffML_Frame0,
+    gTilesetAnims_BusPathTiles_waterCliffML_Frame1,
+    gTilesetAnims_BusPathTiles_waterCliffML_Frame2,
+    gTilesetAnims_BusPathTiles_waterCliffML_Frame3,
+    gTilesetAnims_BusPathTiles_waterCliffML_Frame4,
+    gTilesetAnims_BusPathTiles_waterCliffML_Frame5,
+    gTilesetAnims_BusPathTiles_waterCliffML_Frame6,
+    gTilesetAnims_BusPathTiles_waterCliffML_Frame7
+};
+
+static void QueueAnimTiles_BusPathTiles_waterCliffML(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_BusPathTiles_waterCliffML);
+    AppendTilesetAnimToBuffer(gTilesetAnims_BusPathTiles_waterCliffML[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(27)), 2 * TILE_SIZE_4BPP);
+}
+
+
+//bus path waterFliffBL
+const u16 gTilesetAnims_BusPathTiles_waterCliffBL_Frame0[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffBL/00.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffBL_Frame1[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffBL/01.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffBL_Frame2[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffBL/02.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffBL_Frame3[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffBL/03.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffBL_Frame4[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffBL/04.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffBL_Frame5[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffBL/05.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffBL_Frame6[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffBL/06.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffBL_Frame7[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffBL/07.4bpp");
+
+const u16 *const gTilesetAnims_BusPathTiles_waterCliffBL[] = {
+    gTilesetAnims_BusPathTiles_waterCliffBL_Frame0,
+    gTilesetAnims_BusPathTiles_waterCliffBL_Frame1,
+    gTilesetAnims_BusPathTiles_waterCliffBL_Frame2,
+    gTilesetAnims_BusPathTiles_waterCliffBL_Frame3,
+    gTilesetAnims_BusPathTiles_waterCliffBL_Frame4,
+    gTilesetAnims_BusPathTiles_waterCliffBL_Frame5,
+    gTilesetAnims_BusPathTiles_waterCliffBL_Frame6,
+    gTilesetAnims_BusPathTiles_waterCliffBL_Frame7
+};
+
+static void QueueAnimTiles_BusPathTiles_waterCliffBL(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_BusPathTiles_waterCliffBL);
+    AppendTilesetAnimToBuffer(gTilesetAnims_BusPathTiles_waterCliffBL[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(17)), 4 * TILE_SIZE_4BPP);
+}
+
+
+//bus path waterFliffTR
+const u16 gTilesetAnims_BusPathTiles_waterCliffTR_Frame0[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffTR/00.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffTR_Frame1[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffTR/01.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffTR_Frame2[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffTR/02.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffTR_Frame3[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffTR/03.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffTR_Frame4[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffTR/04.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffTR_Frame5[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffTR/05.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffTR_Frame6[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffTR/06.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffTR_Frame7[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffTR/07.4bpp");
+
+const u16 *const gTilesetAnims_BusPathTiles_waterCliffTR[] = {
+    gTilesetAnims_BusPathTiles_waterCliffTR_Frame0,
+    gTilesetAnims_BusPathTiles_waterCliffTR_Frame1,
+    gTilesetAnims_BusPathTiles_waterCliffTR_Frame2,
+    gTilesetAnims_BusPathTiles_waterCliffTR_Frame3,
+    gTilesetAnims_BusPathTiles_waterCliffTR_Frame4,
+    gTilesetAnims_BusPathTiles_waterCliffTR_Frame5,
+    gTilesetAnims_BusPathTiles_waterCliffTR_Frame6,
+    gTilesetAnims_BusPathTiles_waterCliffTR_Frame7
+};
+
+static void QueueAnimTiles_BusPathTiles_waterCliffTR(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_BusPathTiles_waterCliffTR);
+    AppendTilesetAnimToBuffer(gTilesetAnims_BusPathTiles_waterCliffTR[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(32)), 1 * TILE_SIZE_4BPP);
+}
+
+
+//bus path waterFliffMR
+const u16 gTilesetAnims_BusPathTiles_waterCliffMR_Frame0[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffMR/00.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffMR_Frame1[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffMR/01.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffMR_Frame2[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffMR/02.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffMR_Frame3[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffMR/03.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffMR_Frame4[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffMR/04.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffMR_Frame5[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffMR/05.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffMR_Frame6[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffMR/06.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffMR_Frame7[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffMR/07.4bpp");
+
+const u16 *const gTilesetAnims_BusPathTiles_waterCliffMR[] = {
+    gTilesetAnims_BusPathTiles_waterCliffMR_Frame0,
+    gTilesetAnims_BusPathTiles_waterCliffMR_Frame1,
+    gTilesetAnims_BusPathTiles_waterCliffMR_Frame2,
+    gTilesetAnims_BusPathTiles_waterCliffMR_Frame3,
+    gTilesetAnims_BusPathTiles_waterCliffMR_Frame4,
+    gTilesetAnims_BusPathTiles_waterCliffMR_Frame5,
+    gTilesetAnims_BusPathTiles_waterCliffMR_Frame6,
+    gTilesetAnims_BusPathTiles_waterCliffMR_Frame7
+};
+
+static void QueueAnimTiles_BusPathTiles_waterCliffMR(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_BusPathTiles_waterCliffMR);
+    AppendTilesetAnimToBuffer(gTilesetAnims_BusPathTiles_waterCliffMR[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(29)), 2 * TILE_SIZE_4BPP);
+}
+
+
+//bus path waterFliffBR
+const u16 gTilesetAnims_BusPathTiles_waterCliffBR_Frame0[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffBR/00.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffBR_Frame1[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffBR/01.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffBR_Frame2[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffBR/02.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffBR_Frame3[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffBR/03.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffBR_Frame4[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffBR/04.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffBR_Frame5[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffBR/05.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffBR_Frame6[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffBR/06.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffBR_Frame7[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffBR/07.4bpp");
+
+const u16 *const gTilesetAnims_BusPathTiles_waterCliffBR[] = {
+    gTilesetAnims_BusPathTiles_waterCliffBR_Frame0,
+    gTilesetAnims_BusPathTiles_waterCliffBR_Frame1,
+    gTilesetAnims_BusPathTiles_waterCliffBR_Frame2,
+    gTilesetAnims_BusPathTiles_waterCliffBR_Frame3,
+    gTilesetAnims_BusPathTiles_waterCliffBR_Frame4,
+    gTilesetAnims_BusPathTiles_waterCliffBR_Frame5,
+    gTilesetAnims_BusPathTiles_waterCliffBR_Frame6,
+    gTilesetAnims_BusPathTiles_waterCliffBR_Frame7
+};
+
+static void QueueAnimTiles_BusPathTiles_waterCliffBR(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_BusPathTiles_waterCliffBR);
+    AppendTilesetAnimToBuffer(gTilesetAnims_BusPathTiles_waterCliffBR[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(23)), 4 * TILE_SIZE_4BPP);
+}
+
+
+//bus path waterFliffBM
+const u16 gTilesetAnims_BusPathTiles_waterCliffBM_Frame0[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffBM/00.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffBM_Frame1[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffBM/01.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffBM_Frame2[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffBM/02.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffBM_Frame3[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffBM/03.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffBM_Frame4[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffBM/04.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffBM_Frame5[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffBM/05.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffBM_Frame6[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffBM/06.4bpp");
+const u16 gTilesetAnims_BusPathTiles_waterCliffBM_Frame7[] = INCBIN_U16("data/tilesets/primary/bus_path_tiles/anim/waterCliffBM/07.4bpp");
+
+const u16 *const gTilesetAnims_BusPathTiles_waterCliffBM[] = {
+    gTilesetAnims_BusPathTiles_waterCliffBM_Frame0,
+    gTilesetAnims_BusPathTiles_waterCliffBM_Frame1,
+    gTilesetAnims_BusPathTiles_waterCliffBM_Frame2,
+    gTilesetAnims_BusPathTiles_waterCliffBM_Frame3,
+    gTilesetAnims_BusPathTiles_waterCliffBM_Frame4,
+    gTilesetAnims_BusPathTiles_waterCliffBM_Frame5,
+    gTilesetAnims_BusPathTiles_waterCliffBM_Frame6,
+    gTilesetAnims_BusPathTiles_waterCliffBM_Frame7
+};
+
+static void QueueAnimTiles_BusPathTiles_waterCliffBM(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_BusPathTiles_waterCliffBM);
+    AppendTilesetAnimToBuffer(gTilesetAnims_BusPathTiles_waterCliffBM[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(21)), 2 * TILE_SIZE_4BPP);
+}
+
+
+
+static void TilesetAnim_BusPathTiles(u16 timer)
+{
+    if (timer % 16 == 0) {
+        QueueAnimTiles_BusPathTiles_Water(timer / 16);
+    }
+    if (timer % 16 == 1) {
+        QueueAnimTiles_BusPathTiles_PurpleFlower(timer / 16);
+    }
+    if (timer % 16 == 2) {
+        QueueAnimTiles_BusPathTiles_BlueFlower(timer / 16);
+    }
+    if (timer % 16 == 3) {
+        QueueAnimTiles_BusPathTiles_RedFlower(timer / 16);
+    }
+    if (timer % 16 == 4) {
+        QueueAnimTiles_BusPathTiles_WaterSand(timer / 16);
+    }
+    if (timer % 16 == 5){
+        QueueAnimTiles_BusPathTiles_waterCliffTL(timer / 16);
+    }
+    if (timer % 16 == 6){
+        QueueAnimTiles_BusPathTiles_waterCliffML(timer / 16);
+    }
+    if (timer % 16 == 7){
+        QueueAnimTiles_BusPathTiles_waterCliffBL(timer / 16);
+    }
+    if (timer % 16 == 8){
+        QueueAnimTiles_BusPathTiles_waterCliffTR(timer / 16);
+    }
+    if (timer % 16 == 9){
+        QueueAnimTiles_BusPathTiles_waterCliffMR(timer / 16);
+    }
+    if (timer % 16 == 10){
+        QueueAnimTiles_BusPathTiles_waterCliffBR(timer / 16);
+    }
+    if (timer % 16 == 11){
+        QueueAnimTiles_BusPathTiles_waterCliffBM(timer / 16);
+    }
+}
+
+void InitTilesetAnim_BusPathTiles(void)
+{
+    sPrimaryTilesetAnimCounter = 0;
+    sPrimaryTilesetAnimCounterMax = 256;
+    sPrimaryTilesetAnimCallback = TilesetAnim_BusPathTiles;
+}

@@ -17,7 +17,6 @@ AbandonedShip_Corridors_B1F_EventScript_LockStorageRoom::
 	return
 
 AbandonedShip_Corridors_B1F_EventScript_UnlockStorageRoom::
-	setmetatile 11, 4, METATILE_InsideShip_IntactDoor_Bottom_Unlocked, TRUE
 	return
 
 AbandonedShip_Corridors_B1F_EventScript_TuberM::
